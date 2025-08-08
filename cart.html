@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link href="./css/all.min.css">
+    <link rel="stylesheet" href="./css/cart.css">
+    <title>Cart</title>
+</head>
+<body>
+    <header>
+  </header>
+
+ <nav class="navbar">
+    <div class="logo"><span class="purple">S</span>NA<span class="purple">Y</span></div>
+
+    <ul class="nav-links">
+      <li><a href="#">Home</a></li>
+      <li><a href="#">Product</a></li>
+      <li><a href="#">Product Detaila</a></li>
+      <li><a href="#">Cart</a></li>
+      <li><a href="./checkout.html">CheckOut</a></li>
+      <li><a href="#">Orders</a></li>
+    </ul>
+
+    <div class="nav-right">
+      <div class="search-bar">
+        <input type="text" placeholder="Books by keyword..." />
+        <button><i class="fas fa-search"></i></button>
+      </div>
+      <div class="cart">
+        <i style="color: #6f42c1;" class="fas fa-shopping-cart " ></i>
+        <span class="badge">2</span>
+      </div>
+    </div>
+  </nav>
+
+
+  <div class="container my-4">
+    <div class="table-responsive">
+      <table class="table align-middle text-center">
+        <thead>
+          <tr>
+            <th>Item</th>
+            <th>Quantity</th>
+            <th>Price</th>
+            <th>Total Price</th>
+            <th></th>
+          </tr>
+        </thead>
+        <tbody id="cart-items">
+          
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <div class="container mb-5">
+    <div class="row">
+      <div class="col-md-6 offset-md-6">
+        <div class="card p-4">
+          <h4>Shopping Summary</h4>
+          <p class="text-muted small">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item d-flex justify-content-between">
+              <span>Subtotal</span>
+              <span id="subtotal">$0.00</span>
+            </li>
+            <li class="list-group-item d-flex justify-content-between">
+              <span>Tax</span>
+              <span id="tax">$0.00</span>
+            </li>
+            <li class="list-group-item d-flex justify-content-between fw-bold">
+              <span>Total</span>
+              <span id="total">$0.00</span>
+            </li>
+          </ul>
+          <div class="input-group my-3">
+            <input type="text" class="form-control" placeholder="Enter promo code">
+            <button class="btn btn-outline-secondary">&rarr;</button>
+          </div>
+          <a href="./cart.html"><button class="btn btn-primary w-100">CHECKOUT</button></a>
+          
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer class="footer">
+  <div class="footer-content">
+    <div class="footer-section about">
+      <h2 class="logo-text">SNAY</h2>
+      <p>SNAY is an online bookstore website who sells all genres of books from around the world. Find your book here now</p>
+      <div class="socials">
+        <a href="#"><i class="fab fa-facebook-f"></i></a>
+        <a href="#"><i class="fab fa-youtube"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+      </div>
+    </div>
+
+    <div class="footer-section links">
+      <h3>Quick Links</h3>
+      <ul>
+        <li><a href="#">About us</a></li>
+        <li><a href="#">Contact us</a></li>
+        <li><a href="#">Products</a></li>
+        <li><a href="#">Login</a></li>
+        <li><a href="#">Sign Up</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-section customer">
+      <h3>Customer Area</h3>
+      <ul>
+        <li><a href="#">My Account</a></li>
+        <li><a href="#">Orders</a></li>
+        <li><a href="#">Tracking List</a></li>
+        <li><a href="#">Terms</a></li>
+        <li><a href="#">Privacy Policy</a></li>
+        <li><a href="#">FAQ</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-section newsletter">
+      <h3>Don’t miss the newest books</h3>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut</p>
+      
+    </div>
+  </div>
+</footer>
+
+    
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script> 
+   <script src="./js/all.min.js"></script>
+   <script src="./js/cart.js"></script>
+</body>
+</html>
