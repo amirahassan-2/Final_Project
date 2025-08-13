@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Admin Dashboard</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="./css/admin.css"> 
+  <style>
+    .form-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 10px;
+    }
+    textarea {
+      grid-column: 1 / span 2;
+      resize: vertical;
+    }
+    button {
+      margin-top: 10px;
+      padding: 8px 12px;
+      background: purple;
+      color: white;
+      border: none;
+      cursor: pointer;
+    }
+   .add-book-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  padding: 8px 16px;
+  background: linear-gradient(135deg, #6f42c1, #a066ff);
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0px 3px 8px rgba(111, 66, 193, 0.3);
+  height: 50px;       /* إلغاء الطول الكبير */
+  width: auto;        /* على قد النص */
+}
+
+.add-book-btn i {
+  font-size: 14px;
+}
+
+.add-book-btn:hover {
+  background: linear-gradient(135deg, #5a34a1, #8c4fff);
+  transform: translateY(-1px);
+  box-shadow: 0px 5px 12px rgba(111, 66, 193, 0.5);
+}
+
+.add-book-btn:active {
+  transform: translateY(0);
+  box-shadow: 0px 2px 6px rgba(111, 66, 193, 0.4);
+}
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 20px;
+    }
+    table, th, td {
+      border: 1px solid #ccc;
+    }
+    th, td {
+      padding: 10px;
+      text-align: left;
+    }
+  </style>
+</head>
+<body>
+  <nav class="navbar">
+    <div class="logo"><span class="purple">S</span>NA<span class="purple">Y</span></div>
+    <ul class="nav-links">
+      <li><a href="./product.html">Product</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <div class="wrapper">
+      <h2>Book Management</h2>
+
+      <form id="bookForm">
+  <div class="form-grid">
+    <input type="text" id="title" placeholder="Book Title" required>
+    <input type="text" id="author" placeholder="Author" required>
+    <input type="number" id="price" placeholder="Price" required>
+    <input type="file" id="img" accept="image/*">
+    <input type="text" id="language" placeholder="Language">
+    <input type="text" id="publisher" placeholder="Publisher">
+    <input type="text" id="category" placeholder="Category">
+    <textarea id="summary" placeholder="Summary"></textarea>
+  </div>
+  <button type="submit" class="add-book-btn">
+  <i class="fa-solid"></i>Add Book
+</button>
+</form>
+
+
+      <table id="booksTable">
+        <thead>
+          <tr>
+            <th>Title</th>
+            <th>Author</th>
+            <th>Price</th>
+            <th>Language</th>
+            <th>Publisher</th>
+            <th>Category</th>
+            <th>Actions</th>
+          </tr>
+        </thead>
+        <tbody></tbody>
+      </table>
+
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-content">
+      <div class="footer-section about">
+        <h2 class="logo-text">SNAY</h2>
+        <p>SNAY is an online bookstore website who sells all genres of books from around the world. Find your book here now</p>
+        <div class="socials">
+          <a href="#"><i class="fab fa-facebook-f"></i></a>
+          <a href="#"><i class="fab fa-youtube"></i></a>
+          <a href="#"><i class="fab fa-twitter"></i></a>
+          <a href="#"><i class="fab fa-linkedin-in"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+        </div>
+      </div>
+
+      <div class="footer-section links">
+        <h3>Quick Links</h3>
+        <ul>
+          <li><a href="#">About us</a></li>
+          <li><a href="#">Contact us</a></li>
+          <li><a href="#">Products</a></li>
+          <li><a href="#">Login</a></li>
+          <li><a href="#">Sign Up</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-section customer">
+        <h3>Customer Area</h3>
+        <ul>
+          <li><a href="#">My Account</a></li>
+          <li><a href="#">Orders</a></li>
+          <li><a href="#">Tracking List</a></li>
+          <li><a href="#">Terms</a></li>
+          <li><a href="#">Privacy Policy</a></li>
+          <li><a href="#">FAQ</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-section newsletter">
+        <h3>Don’t miss the newest books</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="./js/admin.js"></script>
+</body>
+</html>
